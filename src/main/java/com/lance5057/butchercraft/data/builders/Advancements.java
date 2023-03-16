@@ -313,7 +313,7 @@ public class Advancements extends AdvancementProvider {
 				.addCriterion("everything_plus_lung",
 						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_LUNG.get()))
 				.addCriterion("everything_plus_stomach",
-						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_STOMACHE.get()))
+						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_STOMACH.get()))
 				.addCriterion("everything_plus_tripe",
 						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_TRIPE.get()))
 				.save(consumer, Butchercraft.MOD_ID + ":everything_plus");

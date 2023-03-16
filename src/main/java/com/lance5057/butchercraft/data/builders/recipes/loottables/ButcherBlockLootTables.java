@@ -6,7 +6,7 @@ import static com.lance5057.butchercraft.ButchercraftItems.KIDNEY;
 import static com.lance5057.butchercraft.ButchercraftItems.LIVER;
 import static com.lance5057.butchercraft.ButchercraftItems.LUNG;
 import static com.lance5057.butchercraft.ButchercraftItems.SINEW;
-import static com.lance5057.butchercraft.ButchercraftItems.STOMACHE;
+import static com.lance5057.butchercraft.ButchercraftItems.STOMACH;
 import static com.lance5057.butchercraft.ButchercraftItems.TRIPE;
 
 import java.util.function.BiConsumer;
@@ -37,7 +37,7 @@ public class ButcherBlockLootTables implements Consumer<BiConsumer<ResourceLocat
 				LootTable.lootTable().withPool(MeatHookLoottables.createPoolWithItem(HEART.get()))
 						.withPool(MeatHookLoottables.createPoolWithItem(KIDNEY.get(), 2))
 						.withPool(MeatHookLoottables.createPoolWithItem(LIVER.get()))
-						.withPool(MeatHookLoottables.createPoolWithItem(STOMACHE.get()))
+						.withPool(MeatHookLoottables.createPoolWithItem(STOMACH.get()))
 						.withPool(MeatHookLoottables.createPoolWithItem(LUNG.get(), 2))
 						.withPool(MeatHookLoottables.createPoolWithItem(TRIPE.get(), 1))
 						.withPool(MeatHookLoottables.createPoolWithItem(SINEW.get(), 4, 8))

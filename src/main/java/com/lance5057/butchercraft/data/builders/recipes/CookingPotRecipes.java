@@ -27,15 +27,12 @@ public class CookingPotRecipes extends RecipeProvider {
 
 	@Override
 	protected void buildCraftingRecipes(@Nonnull Consumer<FinishedRecipe> consumer) {
-		
-
-		
 
 		CookingPotRecipeBuilder.cookingPotRecipe(ButchercraftItems.BUTTER.get(), 2, CookingRecipes.SLOW_COOKING, 1.0F)
 				.addIngredient(Items.MILK_BUCKET).build(consumer, new ResourceLocation(Butchercraft.MOD_ID, "butter"));
 
 		CookingPotRecipeBuilder.cookingPotRecipe(ButchercraftItems.CHEESE.get(), 2, CookingRecipes.SLOW_COOKING, 1.0F)
-				.addIngredient(Items.MILK_BUCKET).addIngredient(ButchercraftItems.STOMACHE.get()).build(consumer, new ResourceLocation(Butchercraft.MOD_ID, "cheese"));
+				.addIngredient(Items.MILK_BUCKET).addIngredient(ButchercraftItems.STOMACH.get()).build(consumer, new ResourceLocation(Butchercraft.MOD_ID, "cheese"));
 
 		CookingPotRecipeBuilder
 				.cookingPotRecipe(ButchercraftItems.LAMB_STEW.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F,
@@ -72,7 +69,7 @@ public class CookingPotRecipes extends RecipeProvider {
 		CookingPotRecipeBuilder
 				.cookingPotRecipe(ButchercraftItems.POT_ROAST_FEAST_ITEM.get(), 1, CookingRecipes.SLOW_COOKING, 0.35F,
 						Items.BOWL)
-				.addIngredient(ButchercraftItemTags.ANY_ROAST_RAW).addIngredient(ForgeTags.VEGETABLES_ONION)
+				.addIngredient(ButchercraftItemTags.ROAST_RAW).addIngredient(ForgeTags.VEGETABLES_ONION)
 				.addIngredient(Items.POTATO).addIngredient(Items.CARROT).build(consumer, new ResourceLocation(Butchercraft.MOD_ID, "pot_roast_feast"));
 
 		
@@ -87,9 +84,9 @@ public class CookingPotRecipes extends RecipeProvider {
 		CookingPotRecipeBuilder
 				.cookingPotRecipe(ButchercraftItems.MEAT_PIE_BLOCK_ITEM.get(), 1, CookingRecipes.SLOW_COOKING, 0.35F,
 						Items.BOWL)
-				.addIngredient(ButchercraftItemTags.ANY_GROUND_MEAT_RAW)
-				.addIngredient(ButchercraftItemTags.ANY_GROUND_MEAT_RAW)
-				.addIngredient(ButchercraftItemTags.ANY_GROUND_MEAT_RAW).addIngredient(Items.POTATO)
+				.addIngredient(ButchercraftItemTags.GROUND_MEAT_RAW)
+				.addIngredient(ButchercraftItemTags.GROUND_MEAT_RAW)
+				.addIngredient(ButchercraftItemTags.GROUND_MEAT_RAW).addIngredient(Items.POTATO)
 				.addIngredient(ForgeTags.VEGETABLES_ONION).addIngredient(ModItems.PIE_CRUST.get()).build(consumer, new ResourceLocation(Butchercraft.MOD_ID, "meat_pie"));
 
 //		CookingPotRecipeBuilder
@@ -109,8 +106,8 @@ public class CookingPotRecipes extends RecipeProvider {
 		CookingPotRecipeBuilder
 				.cookingPotRecipe(ButchercraftItems.STIRFRY_FEAST_ITEM.get(), 1, CookingRecipes.SLOW_COOKING, 0.35F,
 						Items.BOWL)
-				.addIngredient(ButchercraftItemTags.ANY_SCRAP_MEAT_RAW)
-				.addIngredient(ButchercraftItemTags.ANY_SCRAP_MEAT_RAW).addIngredient(ForgeTags.VEGETABLES)
+				.addIngredient(ButchercraftItemTags.SCRAP_MEAT_RAW)
+				.addIngredient(ButchercraftItemTags.SCRAP_MEAT_RAW).addIngredient(ForgeTags.VEGETABLES)
 				.addIngredient(ForgeTags.VEGETABLES).addIngredient(ForgeTags.VEGETABLES)
 				.addIngredient(ForgeTags.VEGETABLES).build(consumer, new ResourceLocation(Butchercraft.MOD_ID, "stirfry_feast"));
 
@@ -122,9 +119,9 @@ public class CookingPotRecipes extends RecipeProvider {
 
 		CookingPotRecipeBuilder
 				.cookingPotRecipe(ButchercraftItems.HAGGIS_FEAST_ITEM.get(), 1, CookingRecipes.SLOW_COOKING, 0.35F,
-						ButchercraftItems.STOMACHE.get())
-				.addIngredient(ButchercraftItemTags.ANY_OFFAL).addIngredient(ButchercraftItemTags.ANY_OFFAL)
-				.addIngredient(ButchercraftItemTags.ANY_OFFAL).addIngredient(ButchercraftItems.LUNG.get())
+						ButchercraftItems.STOMACH.get())
+				.addIngredient(ButchercraftItemTags.OFFAL).addIngredient(ButchercraftItemTags.OFFAL)
+				.addIngredient(ButchercraftItemTags.OFFAL).addIngredient(ButchercraftItems.LUNG.get())
 				.addIngredient(Items.WHEAT).addIngredient(Items.POTATO).build(consumer, new ResourceLocation(Butchercraft.MOD_ID, "haggis_feast"));
 
 		CookingPotRecipeBuilder
@@ -240,12 +237,12 @@ public class CookingPotRecipes extends RecipeProvider {
 				.build(consumer, new ResourceLocation(Butchercraft.MOD_ID, "white_jelly_feast"));
 
 		CookingPotRecipeBuilder.cookingPotRecipe(ButchercraftItems.GELATIN.get(), 4, CookingRecipes.SLOW_COOKING, 0.35F)
-				.addIngredient(ButchercraftItemTags.ANY_GELATIN_PROVIDER)
-				.addIngredient(ButchercraftItemTags.ANY_GELATIN_PROVIDER)
-				.addIngredient(ButchercraftItemTags.ANY_GELATIN_PROVIDER)
-				.addIngredient(ButchercraftItemTags.ANY_GELATIN_PROVIDER)
-				.addIngredient(ButchercraftItemTags.ANY_GELATIN_PROVIDER)
-				.addIngredient(ButchercraftItemTags.ANY_GELATIN_PROVIDER).build(consumer, new ResourceLocation(Butchercraft.MOD_ID, "gelatin"));
+				.addIngredient(ButchercraftItemTags.GELATIN_PROVIDER)
+				.addIngredient(ButchercraftItemTags.GELATIN_PROVIDER)
+				.addIngredient(ButchercraftItemTags.GELATIN_PROVIDER)
+				.addIngredient(ButchercraftItemTags.GELATIN_PROVIDER)
+				.addIngredient(ButchercraftItemTags.GELATIN_PROVIDER)
+				.addIngredient(ButchercraftItemTags.GELATIN_PROVIDER).build(consumer, new ResourceLocation(Butchercraft.MOD_ID, "gelatin"));
 
 		CookingPotRecipeBuilder
 				.cookingPotRecipe(ButchercraftItems.LIVER_ONIONS.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F,

@@ -27,7 +27,7 @@ import static com.lance5057.butchercraft.ButchercraftItems.PORK_SCRAPS;
 import static com.lance5057.butchercraft.ButchercraftItems.PORK_STEW_MEAT;
 import static com.lance5057.butchercraft.ButchercraftItems.SHEEP_HIDE;
 import static com.lance5057.butchercraft.ButchercraftItems.SINEW;
-import static com.lance5057.butchercraft.ButchercraftItems.STOMACHE;
+import static com.lance5057.butchercraft.ButchercraftItems.STOMACH;
 import static com.lance5057.butchercraft.ButchercraftItems.TRIPE;
 import static net.minecraft.world.item.Items.BEEF;
 import static net.minecraft.world.item.Items.BONE;
@@ -90,7 +90,7 @@ public class MeatHookLoottables implements Consumer<BiConsumer<ResourceLocation,
                         .withPool(createPoolWithItem(HEART.get()))
                         .withPool(createPoolWithItem(KIDNEY.get(), 2))
                         .withPool(createPoolWithItem(LIVER.get()))
-                        .withPool(createPoolWithItem(STOMACHE.get(), 4))
+                        .withPool(createPoolWithItem(STOMACH.get(), 4))
                         .withPool(createPoolWithItem(LUNG.get(), 2))
                         .withPool(createPoolWithItem(TRIPE.get(), 8))
                         .withPool(createPoolWithItem(ButchercraftItems.BEEF_TONGUE.get(), 1)));
@@ -124,7 +124,7 @@ public class MeatHookLoottables implements Consumer<BiConsumer<ResourceLocation,
                         .withPool(createPoolWithItem(HEART.get()))
                         .withPool(createPoolWithItem(KIDNEY.get(), 2))
                         .withPool(createPoolWithItem(LIVER.get()))
-                        .withPool(createPoolWithItem(STOMACHE.get()))
+                        .withPool(createPoolWithItem(STOMACH.get()))
                         .withPool(createPoolWithItem(LUNG.get(), 2))
                         .withPool(createPoolWithItem(TRIPE.get(), 8))
                         .withPool(createPoolWithItem(SINEW.get(), 4, 12))
@@ -157,7 +157,7 @@ public class MeatHookLoottables implements Consumer<BiConsumer<ResourceLocation,
                         .withPool(createPoolWithItem(HEART.get()))
                         .withPool(createPoolWithItem(KIDNEY.get(), 2))
                         .withPool(createPoolWithItem(LIVER.get()))
-                        .withPool(createPoolWithItem(STOMACHE.get()))
+                        .withPool(createPoolWithItem(STOMACH.get()))
                         .withPool(createPoolWithItem(LUNG.get(), 2))
                         .withPool(createPoolWithItem(TRIPE.get(), 4))
                         .withPool(createPoolWithItem(SINEW.get(), 4, 8)));

@@ -15,8 +15,8 @@ public class FoodsGeneric {
     public static final FoodProperties COOKED_LIVER = (new FoodProperties.Builder()).nutrition(6).saturationMod(0.4F).meat().build();
     public static final FoodProperties LUNG = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.2F).meat().effect(() -> new MobEffectInstance(MobEffects.HUNGER, 600, 0), 0.6F).build();
     public static final FoodProperties COOKED_LUNG = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.4F).meat().build();
-    public static final FoodProperties STOMACHE = (new FoodProperties.Builder()).nutrition(2).saturationMod(0.1F).meat().effect(() -> new MobEffectInstance(MobEffects.HUNGER, 600, 0), 0.6F).build();
-    public static final FoodProperties COOKED_STOMACHE = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.2F).meat().build();
+    public static final FoodProperties STOMACH = (new FoodProperties.Builder()).nutrition(2).saturationMod(0.1F).meat().effect(() -> new MobEffectInstance(MobEffects.HUNGER, 600, 0), 0.6F).build();
+    public static final FoodProperties COOKED_STOMACH = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.2F).meat().build();
     public static final FoodProperties TRIPE = (new FoodProperties.Builder()).nutrition(3).saturationMod(0.1F).meat().effect(() -> new MobEffectInstance(MobEffects.HUNGER, 600, 0), 0.6F).build();
     public static final FoodProperties COOKED_TRIPE = (new FoodProperties.Builder()).nutrition(6).saturationMod(0.2F).meat().build();
     

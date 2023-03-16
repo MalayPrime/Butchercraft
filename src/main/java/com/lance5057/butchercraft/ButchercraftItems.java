@@ -51,10 +51,10 @@ public class ButchercraftItems {
 			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsCow.COOKED_BEEF_RIBS)));
 	public static final RegistryObject<Item> BEEF_RIBS = ITEMS.register("beef_ribs",
 			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsCow.BEEF_RIBS)));
-	public static final RegistryObject<Item> COOKED_BEEF_RIB = ITEMS.register("cooked_beef_rib",
-			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsCow.COOKED_BEEF_RIB)));
-	public static final RegistryObject<Item> BEEF_RIB = ITEMS.register("beef_rib",
-			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsCow.BEEF_RIB)));
+//	public static final RegistryObject<Item> COOKED_BEEF_RIB = ITEMS.register("cooked_beef_rib",
+//			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsCow.COOKED_BEEF_RIB)));
+//	public static final RegistryObject<Item> BEEF_RIB = ITEMS.register("beef_rib",
+//			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsCow.BEEF_RIB)));
 	public static final RegistryObject<Item> COOKED_BEEF_ROAST = ITEMS.register("cooked_beef_roast",
 			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsCow.COOKED_ROAST)));
 	public static final RegistryObject<Item> BEEF_ROAST = ITEMS.register("beef_roast",
@@ -91,10 +91,10 @@ public class ButchercraftItems {
 			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsPig.COOKED_PORK_RIBS)));
 	public static final RegistryObject<Item> PORK_RIBS = ITEMS.register("pork_ribs",
 			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsPig.PORK_RIBS)));
-	public static final RegistryObject<Item> COOKED_PORK_RIB = ITEMS.register("cooked_pork_rib",
-			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsPig.COOKED_PORK_RIB)));
-	public static final RegistryObject<Item> PORK_RIB = ITEMS.register("pork_rib",
-			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsPig.PORK_RIB)));
+//	public static final RegistryObject<Item> COOKED_PORK_RIB = ITEMS.register("cooked_pork_rib",
+//			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsPig.COOKED_PORK_RIB)));
+//	public static final RegistryObject<Item> PORK_RIB = ITEMS.register("pork_rib",
+//			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsPig.PORK_RIB)));
 	public static final RegistryObject<Item> COOKED_PORK_ROAST = ITEMS.register("cooked_pork_roast",
 			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsPig.COOKED_ROAST)));
 	public static final RegistryObject<Item> PORK_ROAST = ITEMS.register("pork_roast",
@@ -123,10 +123,10 @@ public class ButchercraftItems {
 			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsSheep.COOKED_LAMB_RIBS)));
 	public static final RegistryObject<Item> LAMB_RIBS = ITEMS.register("lamb_ribs",
 			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsSheep.LAMB_RIBS)));
-	public static final RegistryObject<Item> COOKED_LAMB_RIB = ITEMS.register("cooked_lamb_rib",
-			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsSheep.COOKED_LAMB_RIB)));
-	public static final RegistryObject<Item> LAMB_RIB = ITEMS.register("lamb_rib",
-			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsSheep.LAMB_RIB)));
+//	public static final RegistryObject<Item> COOKED_LAMB_RIB = ITEMS.register("cooked_lamb_rib",
+//			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsSheep.COOKED_LAMB_RIB)));
+//	public static final RegistryObject<Item> LAMB_RIB = ITEMS.register("lamb_rib",
+//			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsSheep.LAMB_RIB)));
 	public static final RegistryObject<Item> COOKED_LAMB_ROAST = ITEMS.register("cooked_lamb_roast",
 			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsSheep.COOKED_ROAST)));
 	public static final RegistryObject<Item> LAMB_ROAST = ITEMS.register("lamb_roast",
@@ -148,10 +148,10 @@ public class ButchercraftItems {
 			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsGeneric.COOKED_TRIPE)));
 	public static final RegistryObject<Item> TRIPE = ITEMS.register("tripe",
 			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsGeneric.TRIPE)));
-	public static final RegistryObject<Item> COOKED_STOMACHE = ITEMS.register("cooked_stomache",
-			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsGeneric.COOKED_STOMACHE)));
-	public static final RegistryObject<Item> STOMACHE = ITEMS.register("stomache",
-			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsGeneric.STOMACHE)));
+	public static final RegistryObject<Item> COOKED_STOMACH = ITEMS.register("cooked_stomach",
+			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsGeneric.COOKED_STOMACH)));
+	public static final RegistryObject<Item> STOMACH = ITEMS.register("stomach",
+			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsGeneric.STOMACH)));
 	public static final RegistryObject<Item> COOKED_LUNG = ITEMS.register("cooked_lung",
 			() -> new Item(new Item.Properties().tab(BUTCHER_TAB).food(FoodsGeneric.COOKED_LUNG)));
 	public static final RegistryObject<Item> LUNG = ITEMS.register("lung",
