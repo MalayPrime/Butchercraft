@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "butchercraft:any_cubed_meat_raw"
+      "tag": "forge:meat/cubed/raw"
     },
     {
       "tag": "forge:vegetables/onion"

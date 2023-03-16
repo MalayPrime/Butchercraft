@@ -21,16 +21,6 @@
       },
       "trigger": "minecraft:consume_item"
     },
-    "whole_cow_rib": {
-      "conditions": {
-        "item": {
-          "items": [
-            "butchercraft:cooked_beef_rib"
-          ]
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
     "whole_cow_ribs": {
       "conditions": {
         "item": {
@@ -101,16 +91,6 @@
       },
       "trigger": "minecraft:consume_item"
     },
-    "whole_pig_rib": {
-      "conditions": {
-        "item": {
-          "items": [
-            "butchercraft:cooked_pork_rib"
-          ]
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
     "whole_pig_ribs": {
       "conditions": {
         "item": {
@@ -166,16 +146,6 @@
         "item": {
           "items": [
             "butchercraft:cooked_ground_lamb"
-          ]
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
-    "whole_sheep_rib": {
-      "conditions": {
-        "item": {
-          "items": [
-            "butchercraft:cooked_lamb_rib"
           ]
         }
       },
@@ -239,9 +209,6 @@
   },
   "requirements": [
     [
-      "whole_cow_rib"
-    ],
-    [
       "whole_cow_ribs"
     ],
     [
@@ -260,9 +227,6 @@
       "whole_cow_ground"
     ],
     [
-      "whole_pig_rib"
-    ],
-    [
       "whole_pig_ribs"
     ],
     [
@@ -279,9 +243,6 @@
     ],
     [
       "whole_pig_ground"
-    ],
-    [
-      "whole_sheep_rib"
     ],
     [
       "whole_sheep_ribs"

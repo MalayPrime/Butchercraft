@@ -8,7 +8,13 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
 public class ButchercraftItemTags {
-	public static final TagKey<Item> CARCASSES = butcherTag("carcasses");
+	public static final TagKey<Item> CARCASSE = butcherTag("carcasse");
+	public static final TagKey<Item> COW_CARCASSE = butcherTag("cow_carcasse");
+	public static final TagKey<Item> PIG_CARCASSE = butcherTag("pig_carcasse");
+	public static final TagKey<Item> SHEEP_CARCASSE = butcherTag("sheep_carcasse");
+	public static final TagKey<Item> CHICKEN_CARCASSE = butcherTag("chicken_carcasse");
+	public static final TagKey<Item> RABBIT_CARCASSE = butcherTag("rabbit_carcasse");
+	public static final TagKey<Item> GOAT_CARCASSE = butcherTag("goat_carcasse");
 
 	// Generic Meat
 	public static final TagKey<Item> MEAT = forgeTag("meat");
@@ -41,6 +47,11 @@ public class ButchercraftItemTags {
 
 	// Beef
 	public static final TagKey<Item> BEEF = forgeTag("beef");
+	public static final TagKey<Item> SCRAP_BEEF = forgeTag("beef/scrap");
+	public static final TagKey<Item> BEEF_ROAST = forgeTag("beef/roast");
+	public static final TagKey<Item> BEEF_RIBS = forgeTag("beef/ribs");
+	public static final TagKey<Item> CUBED_BEEF = forgeTag("beef/cubed");
+	public static final TagKey<Item> STEW_BEEF = forgeTag("beef/stew");
 
 	public static final TagKey<Item> BEEF_RAW = forgeTag("beef/raw");
 	public static final TagKey<Item> SCRAP_BEEF_RAW = forgeTag("beef/scrap/raw");
@@ -48,6 +59,7 @@ public class ButchercraftItemTags {
 	public static final TagKey<Item> BEEF_RIBS_RAW = forgeTag("beef/ribs/raw");
 	public static final TagKey<Item> CUBED_BEEF_RAW = forgeTag("beef/cubed/raw");
 	public static final TagKey<Item> STEW_BEEF_RAW = forgeTag("beef/stew/raw");
+	public static final TagKey<Item> OXTAIL_RAW = forgeTag("beef/oxtail/raw");
 
 	public static final TagKey<Item> BEEF_COOKED = forgeTag("beef/cooked");
 	public static final TagKey<Item> SCRAP_BEEF_COOKED = forgeTag("beef/scrap/cooked");
@@ -55,9 +67,15 @@ public class ButchercraftItemTags {
 	public static final TagKey<Item> BEEF_RIBS_COOKED = forgeTag("beef/ribs/cooked");
 	public static final TagKey<Item> CUBED_BEEF_COOKED = forgeTag("beef/cubed/cooked");
 	public static final TagKey<Item> STEW_BEEF_COOKED = forgeTag("beef/stew/cooked");
+	public static final TagKey<Item> OXTAIL_COOKED = forgeTag("beef/oxtail/cooked");
 
 	// Pork
 	public static final TagKey<Item> PORK = forgeTag("pork");
+	public static final TagKey<Item> SCRAP_PORK = forgeTag("pork/scrap");
+	public static final TagKey<Item> PORK_ROAST = forgeTag("pork/roast");
+	public static final TagKey<Item> PORK_RIBS = forgeTag("pork/ribs");
+	public static final TagKey<Item> CUBED_PORK = forgeTag("pork/cubed");
+	public static final TagKey<Item> STEW_PORK = forgeTag("pork/stew");
 
 	public static final TagKey<Item> PORK_RAW = forgeTag("pork/raw");
 	public static final TagKey<Item> SCRAP_PORK_RAW = forgeTag("pork/scrap/raw");
@@ -75,6 +93,11 @@ public class ButchercraftItemTags {
 
 	// Mutton
 	public static final TagKey<Item> MUTTON = forgeTag("mutton");
+	public static final TagKey<Item> SCRAP_MUTTON = forgeTag("mutton/scrap");
+	public static final TagKey<Item> MUTTON_ROAST = forgeTag("mutton/roast");
+	public static final TagKey<Item> MUTTON_RIBS = forgeTag("mutton/ribs");
+	public static final TagKey<Item> CUBED_MUTTON = forgeTag("mutton/cubed");
+	public static final TagKey<Item> STEW_MUTTON = forgeTag("mutton/stew");
 
 	public static final TagKey<Item> MUTTON_RAW = forgeTag("mutton/raw");
 	public static final TagKey<Item> SCRAP_MUTTON_RAW = forgeTag("mutton/scrap/raw");
@@ -90,6 +113,7 @@ public class ButchercraftItemTags {
 	public static final TagKey<Item> CUBED_MUTTON_COOKED = forgeTag("mutton/cubed/cooked");
 	public static final TagKey<Item> STEW_MUTTON_COOKED = forgeTag("mutton/stew/cooked");
 
+	// Guts
 	public static final TagKey<Item> OFFAL = forgeTag("offal");
 	public static final TagKey<Item> OFFAL_RAW = forgeTag("offal/raw");
 	public static final TagKey<Item> OFFAL_COOKED = forgeTag("offal/cooked");
@@ -122,8 +146,16 @@ public class ButchercraftItemTags {
 	public static final TagKey<Item> BRAIN_RAW = forgeTag("brain/raw");
 	public static final TagKey<Item> BRAIN_COOKED = forgeTag("brain/cooked");
 
+	public static final TagKey<Item> TONGUE = forgeTag("tongue");
+	public static final TagKey<Item> TONGUE_RAW = forgeTag("tongue/raw");
+	public static final TagKey<Item> TONGUE_COOKED = forgeTag("tongue/cooked");
+
 	public static final TagKey<Item> GELATIN = forgeTag("gelatin");
 	public static final TagKey<Item> GELATIN_PROVIDER = butcherTag("gelatin_provider");
+
+	public static final TagKey<Item> HORN = forgeTag("horn");
+	public static final TagKey<Item> FAT = forgeTag("fat");
+	public static final TagKey<Item> LEATHER_SCRAP = forgeTag("leather_scrap");
 
 	public static TagKey<Item> forgeTag(String tag) {
 		return ItemTags.create(new ResourceLocation("forge", tag));

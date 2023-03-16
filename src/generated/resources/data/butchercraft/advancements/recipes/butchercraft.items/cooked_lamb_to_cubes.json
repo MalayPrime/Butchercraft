@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "butchercraft:any_lamb_cooked"
+            "tag": "forge:mutton/cooked"
           }
         ]
       },

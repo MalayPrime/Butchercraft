@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "butchercraft:any_pork_raw"
+            "tag": "forge:pork/raw"
           }
         ]
       },

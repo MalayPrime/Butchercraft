@@ -2,31 +2,31 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "butchercraft:any_beef_cooked"
+      "tag": "forge:beef/cooked"
     },
     {
-      "tag": "butchercraft:any_beef_cooked"
+      "tag": "forge:beef/cooked"
     },
     {
-      "tag": "butchercraft:any_beef_cooked"
+      "tag": "forge:beef/cooked"
     },
     {
-      "tag": "butchercraft:any_beef_cooked"
+      "tag": "forge:beef/cooked"
     },
     {
-      "tag": "butchercraft:any_beef_cooked"
+      "tag": "forge:beef/cooked"
     },
     {
-      "tag": "butchercraft:any_beef_cooked"
+      "tag": "forge:beef/cooked"
     },
     {
-      "tag": "butchercraft:any_beef_cooked"
+      "tag": "forge:beef/cooked"
     },
     {
-      "tag": "butchercraft:any_beef_cooked"
+      "tag": "forge:beef/cooked"
     },
     {
-      "tag": "butchercraft:any_beef_cooked"
+      "tag": "forge:beef/cooked"
     }
   ],
   "result": {

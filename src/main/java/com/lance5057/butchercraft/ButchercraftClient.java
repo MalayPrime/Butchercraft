@@ -3,7 +3,6 @@ package com.lance5057.butchercraft;
 import java.util.Map;
 
 import com.lance5057.butchercraft.workstations.client.ButcherBlockRenderer;
-import com.lance5057.butchercraft.workstations.client.DryingRackRenderer;
 import com.lance5057.butchercraft.workstations.client.MeatHookRenderer;
 
 import net.minecraft.client.Minecraft;
@@ -21,7 +20,7 @@ public class ButchercraftClient {
 	// @SubscribeEvent
 	public static void setBERenderers() {
 		BlockEntityRenderers.register(ButchercraftBlockEntities.MEAT_HOOK.get(), MeatHookRenderer::new);
-		BlockEntityRenderers.register(ButchercraftBlockEntities.DRYING_RACK.get(), DryingRackRenderer::new);
+		
 		BlockEntityRenderers.register(ButchercraftBlockEntities.BUTCHER_BLOCK.get(), ButcherBlockRenderer::new);
 	}
 

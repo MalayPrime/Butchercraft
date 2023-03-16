@@ -42,7 +42,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "butchercraft:stomache"
+          "name": "butchercraft:stomach"
         }
       ],
       "rolls": 1.0

@@ -31,16 +31,6 @@
       },
       "trigger": "minecraft:consume_item"
     },
-    "whole_pig_rib": {
-      "conditions": {
-        "item": {
-          "items": [
-            "butchercraft:cooked_pork_rib"
-          ]
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
     "whole_pig_ribs": {
       "conditions": {
         "item": {
@@ -98,9 +88,6 @@
     }
   },
   "requirements": [
-    [
-      "whole_pig_rib"
-    ],
     [
       "whole_pig_ribs"
     ],

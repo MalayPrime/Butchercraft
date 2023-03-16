@@ -21,16 +21,6 @@
       },
       "trigger": "minecraft:consume_item"
     },
-    "whole_cow_rib": {
-      "conditions": {
-        "item": {
-          "items": [
-            "butchercraft:cooked_beef_rib"
-          ]
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
     "whole_cow_ribs": {
       "conditions": {
         "item": {
@@ -88,9 +78,6 @@
     }
   },
   "requirements": [
-    [
-      "whole_cow_rib"
-    ],
     [
       "whole_cow_ribs"
     ],

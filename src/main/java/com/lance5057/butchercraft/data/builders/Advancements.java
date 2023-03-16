@@ -1,13 +1,24 @@
 package com.lance5057.butchercraft.data.builders;
 
+import java.util.function.Consumer;
+
+import javax.annotation.Nonnull;
+
+import org.jetbrains.annotations.NotNull;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.lance5057.butchercraft.Butchercraft;
 import com.lance5057.butchercraft.ButchercraftItems;
+
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.DisplayInfo;
 import net.minecraft.advancements.FrameType;
-import net.minecraft.advancements.critereon.*;
+import net.minecraft.advancements.critereon.ConsumeItemTrigger;
+import net.minecraft.advancements.critereon.EntityPredicate;
+import net.minecraft.advancements.critereon.InventoryChangeTrigger;
+import net.minecraft.advancements.critereon.ItemPredicate;
+import net.minecraft.advancements.critereon.PlayerInteractTrigger;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.advancements.AdvancementProvider;
 import net.minecraft.network.chat.Component;
@@ -16,10 +27,6 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import org.jetbrains.annotations.NotNull;
-
-import javax.annotation.Nonnull;
-import java.util.function.Consumer;
 import vectorwing.farmersdelight.common.registry.ModItems;
 
 public class Advancements extends AdvancementProvider {
@@ -55,14 +62,16 @@ public class Advancements extends AdvancementProvider {
 	}
 
 	@Override
-	protected void registerAdvancements(@NotNull Consumer<Advancement> consumer, @NotNull ExistingFileHelper fileHelper) {
+	protected void registerAdvancements(@NotNull Consumer<Advancement> consumer,
+			@NotNull ExistingFileHelper fileHelper) {
 		root = Advancement.Builder.advancement()
 				.display(new DisplayInfo(new ItemStack(ButchercraftItems.BUTCHER_KNIFE.get()),
 						Component.translatable(Butchercraft.MOD_ID + ".advancement.root.name"),
 						Component.translatable(Butchercraft.MOD_ID + ".advancement.root.desc"),
 						new ResourceLocation("butchercraft:textures/background.png"), FrameType.TASK, false, false,
 						true))
-				.addCriterion("tick", InventoryChangeTrigger.TriggerInstance.hasItems(ButchercraftItems.BUTCHER_KNIFE.get()))
+				.addCriterion("tick",
+						InventoryChangeTrigger.TriggerInstance.hasItems(ButchercraftItems.BUTCHER_KNIFE.get()))
 				.save(consumer, Butchercraft.MOD_ID + ":root");
 
 		hook = Advancement.Builder.advancement().parent(root)
@@ -104,8 +113,8 @@ public class Advancements extends AdvancementProvider {
 		bonesaw = Advancement.Builder.advancement().parent(hook)
 				.display(new DisplayInfo(new ItemStack(ButchercraftItems.BONE_SAW.get()),
 						Component.translatable(Butchercraft.MOD_ID + ".advancement.bonesaw.name"),
-						Component.translatable(Butchercraft.MOD_ID + ".advancement.bonesaw.desc"), null,
-						FrameType.TASK, true, true, false))
+						Component.translatable(Butchercraft.MOD_ID + ".advancement.bonesaw.desc"), null, FrameType.TASK,
+						true, true, false))
 				.addCriterion("bonesaw",
 						InventoryChangeTrigger.TriggerInstance.hasItems(ButchercraftItems.BONE_SAW.get()))
 				.save(consumer, Butchercraft.MOD_ID + ":bonesaw");
@@ -131,8 +140,8 @@ public class Advancements extends AdvancementProvider {
 		sheep = Advancement.Builder.advancement().parent(butcherknife)
 				.display(new DisplayInfo(new ItemStack(ButchercraftItems.SHEEP_CARCASS.get()),
 						Component.translatable(Butchercraft.MOD_ID + ".advancement.sheep.name"),
-						Component.translatable(Butchercraft.MOD_ID + ".advancement.sheep.desc"), null,
-						FrameType.TASK, true, true, false))
+						Component.translatable(Butchercraft.MOD_ID + ".advancement.sheep.desc"), null, FrameType.TASK,
+						true, true, false))
 				.addCriterion("sheep",
 						InventoryChangeTrigger.TriggerInstance.hasItems(ButchercraftItems.SHEEP_CARCASS.get()))
 				.save(consumer, Butchercraft.MOD_ID + ":sheep");
@@ -142,8 +151,6 @@ public class Advancements extends AdvancementProvider {
 						Component.translatable(Butchercraft.MOD_ID + ".advancement.whole_cow.name"),
 						Component.translatable(Butchercraft.MOD_ID + ".advancement.whole_cow.desc"), null,
 						FrameType.CHALLENGE, true, true, false))
-				.addCriterion("whole_cow_rib",
-						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_BEEF_RIB.get()))
 				.addCriterion("whole_cow_ribs",
 						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_BEEF_RIBS.get()))
 				.addCriterion("whole_cow_roast",
@@ -163,8 +170,6 @@ public class Advancements extends AdvancementProvider {
 						Component.translatable(Butchercraft.MOD_ID + ".advancement.whole_pig.name"),
 						Component.translatable(Butchercraft.MOD_ID + ".advancement.whole_pig.desc"), null,
 						FrameType.CHALLENGE, true, true, false))
-				.addCriterion("whole_pig_rib",
-						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_PORK_RIB.get()))
 				.addCriterion("whole_pig_ribs",
 						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_PORK_RIBS.get()))
 				.addCriterion("whole_pig_roast",
@@ -186,8 +191,6 @@ public class Advancements extends AdvancementProvider {
 						Component.translatable(Butchercraft.MOD_ID + ".advancement.whole_sheep.name"),
 						Component.translatable(Butchercraft.MOD_ID + ".advancement.whole_sheep.desc"), null,
 						FrameType.CHALLENGE, true, true, false))
-				.addCriterion("whole_sheep_rib",
-						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_LAMB_RIB.get()))
 				.addCriterion("whole_sheep_ribs",
 						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_LAMB_RIBS.get()))
 				.addCriterion("whole_sheep_roast",
@@ -207,8 +210,6 @@ public class Advancements extends AdvancementProvider {
 						Component.translatable(Butchercraft.MOD_ID + ".advancement.everything.name"),
 						Component.translatable(Butchercraft.MOD_ID + ".advancement.everything.desc"), null,
 						FrameType.CHALLENGE, true, true, false))
-				.addCriterion("whole_cow_rib",
-						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_BEEF_RIB.get()))
 				.addCriterion("whole_cow_ribs",
 						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_BEEF_RIBS.get()))
 				.addCriterion("whole_cow_roast",
@@ -221,8 +222,6 @@ public class Advancements extends AdvancementProvider {
 						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_CUBED_BEEF.get()))
 				.addCriterion("whole_cow_ground",
 						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_GROUND_BEEF.get()))
-				.addCriterion("whole_pig_rib",
-						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_PORK_RIB.get()))
 				.addCriterion("whole_pig_ribs",
 						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_PORK_RIBS.get()))
 				.addCriterion("whole_pig_roast",
@@ -235,8 +234,6 @@ public class Advancements extends AdvancementProvider {
 						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_CUBED_PORK.get()))
 				.addCriterion("whole_pig_ground",
 						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_GROUND_PORK.get()))
-				.addCriterion("whole_sheep_rib",
-						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_LAMB_RIB.get()))
 				.addCriterion("whole_sheep_ribs",
 						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_LAMB_RIBS.get()))
 				.addCriterion("whole_sheep_roast",
@@ -258,8 +255,6 @@ public class Advancements extends AdvancementProvider {
 						Component.translatable(Butchercraft.MOD_ID + ".advancement.everything_plus.name"),
 						Component.translatable(Butchercraft.MOD_ID + ".advancement.everything_plus.desc"), null,
 						FrameType.CHALLENGE, true, true, false))
-				.addCriterion("whole_cow_rib",
-						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_BEEF_RIB.get()))
 				.addCriterion("whole_cow_ribs",
 						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_BEEF_RIBS.get()))
 				.addCriterion("whole_cow_roast",
@@ -272,8 +267,6 @@ public class Advancements extends AdvancementProvider {
 						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_CUBED_BEEF.get()))
 				.addCriterion("whole_cow_ground",
 						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_GROUND_BEEF.get()))
-				.addCriterion("whole_pig_rib",
-						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_PORK_RIB.get()))
 				.addCriterion("whole_pig_ribs",
 						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_PORK_RIBS.get()))
 				.addCriterion("whole_pig_roast",
@@ -286,8 +279,6 @@ public class Advancements extends AdvancementProvider {
 						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_CUBED_PORK.get()))
 				.addCriterion("whole_pig_ground",
 						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_GROUND_PORK.get()))
-				.addCriterion("whole_sheep_rib",
-						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_LAMB_RIB.get()))
 				.addCriterion("whole_sheep_ribs",
 						ConsumeItemTrigger.TriggerInstance.usedItem(ButchercraftItems.COOKED_LAMB_RIBS.get()))
 				.addCriterion("whole_sheep_roast",

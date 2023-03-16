@@ -21,16 +21,6 @@
       },
       "trigger": "minecraft:consume_item"
     },
-    "whole_sheep_rib": {
-      "conditions": {
-        "item": {
-          "items": [
-            "butchercraft:cooked_lamb_rib"
-          ]
-        }
-      },
-      "trigger": "minecraft:consume_item"
-    },
     "whole_sheep_ribs": {
       "conditions": {
         "item": {
@@ -88,9 +78,6 @@
     }
   },
   "requirements": [
-    [
-      "whole_sheep_rib"
-    ],
     [
       "whole_sheep_ribs"
     ],
