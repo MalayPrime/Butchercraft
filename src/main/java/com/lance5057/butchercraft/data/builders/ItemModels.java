@@ -135,7 +135,7 @@ public class ItemModels extends ModelProvider<ItemModelBuilder> {
 		forItem(ButchercraftItems.SAUSAGE_ROLL, "sausage_roll");
 		forItem(ButchercraftItems.SOS, "sos");
 		forItem(ButchercraftItems.LIVER_ONIONS, "liver_onions");
-		forItem(ButchercraftItems.FRIES, "frenchfries");
+		//forItem(ButchercraftItems.FRIES, "frenchfries");
 		forItem(ButchercraftItems.FRIED_FISH, "friedfish");
 		forItem(ButchercraftItems.CHICKEN_FRIED_STEAK, "chickenfriedsteak");
 		forItem(ButchercraftItems.PORK_TENDERLOIN, "pork_tenderloin");
@@ -160,9 +160,7 @@ public class ItemModels extends ModelProvider<ItemModelBuilder> {
 		forBlockItem(ButchercraftItems.PIG_HIDE, "pig_hide");
 		forBlockItem(ButchercraftItems.SHEEP_HIDE, "sheep_hide");
 
-		forItem(ButchercraftItems.STOCK_JAR_ITEM, "broth");
-
-		forItem(ButchercraftItems.GRAVY_ITEM, "gravy");
+		
 
 		forItem(ButchercraftItems.CHEESE, "cheese");
 		forItem(ButchercraftItems.BUTTER, "butter");
@@ -178,9 +176,7 @@ public class ItemModels extends ModelProvider<ItemModelBuilder> {
 				new ResourceLocation(Butchercraft.MOD_ID, "block/potroast_block_stage0"));
 		forItem(ButchercraftItems.POT_ROAST, "pot_roast");
 
-		forBlockItem(ButchercraftItems.SALISBURY_STEAK_FEAST_ITEM,
-				new ResourceLocation(Butchercraft.MOD_ID, "block/salisbury_steak_block_stage0"));
-		forItem(ButchercraftItems.SALISBURY_STEAK, "salisbury_steak");
+		
 
 		forBlockItem(ButchercraftItems.BBQ_RIBS_FEAST_ITEM,
 				new ResourceLocation(Butchercraft.MOD_ID, "block/bbq_ribs_block_stage0"));
@@ -194,9 +190,7 @@ public class ItemModels extends ModelProvider<ItemModelBuilder> {
 				new ResourceLocation(Butchercraft.MOD_ID, "block/pulled_pork_block_stage0"));
 		forItem(ButchercraftItems.PULLED_PORK_SANDWICH, "pulled_pork_sandwich");
 
-		forBlockItem(ButchercraftItems.MASHED_POTATO_GRAVY_FEAST_ITEM,
-				new ResourceLocation(Butchercraft.MOD_ID, "block/mashed_potato_gravy_block_stage0"));
-		forItem(ButchercraftItems.MASHED_POTATO_GRAVY, "mashed_potato_gravy");
+		
 
 		forBlockItem(ButchercraftItems.RACK_LAMB_FEAST_ITEM,
 				new ResourceLocation(Butchercraft.MOD_ID, "block/rack_lamb_block_stage0"));

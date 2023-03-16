@@ -56,10 +56,10 @@ public class BlockModels extends BlockStateProvider {
 
 		this.feastBlock(ButchercraftBlocks.HASH_FEAST.get());
 		this.feastBlock(ButchercraftBlocks.POT_ROAST_FEAST.get());
-		this.feastBlock(ButchercraftBlocks.SALISBURY_STEAK_FEAST.get());
+		
 		this.feastBlock(ButchercraftBlocks.BBQ_RIBS_FEAST.get());
 		this.feastBlock(ButchercraftBlocks.PULLED_PORK_FEAST.get());
-		this.feastBlock(ButchercraftBlocks.MASHED_POTATO_GRAVY.get());
+		
 		this.feastBlock(ButchercraftBlocks.RACK_LAMB.get());
 		this.feastBlock(ButchercraftBlocks.STIRFRY.get());
 		this.feastBlock(ButchercraftBlocks.BEEF_WELLINGTON.get());

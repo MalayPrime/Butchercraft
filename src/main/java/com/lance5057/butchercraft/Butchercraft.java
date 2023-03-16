@@ -61,7 +61,7 @@ public class Butchercraft {
     		ItemBlockRenderTypes.setRenderLayer(ButchercraftBlocks.HASH_FEAST.get(), RenderType.cutout());
     		ItemBlockRenderTypes.setRenderLayer(ButchercraftBlocks.BBQ_RIBS_FEAST.get(), RenderType.cutout());
     		ItemBlockRenderTypes.setRenderLayer(ButchercraftBlocks.POT_ROAST_FEAST.get(), RenderType.cutout());
-    		ItemBlockRenderTypes.setRenderLayer(ButchercraftBlocks.SALISBURY_STEAK_FEAST.get(), RenderType.cutout());
+    		
     		ItemBlockRenderTypes.setRenderLayer(ButchercraftBlocks.PULLED_PORK_FEAST.get(), RenderType.cutout());
     		ItemBlockRenderTypes.setRenderLayer(ButchercraftBlocks.RACK_LAMB.get(), RenderType.cutout());
     		ItemBlockRenderTypes.setRenderLayer(ButchercraftBlocks.STIRFRY.get(), RenderType.cutout());

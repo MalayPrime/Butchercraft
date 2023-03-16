@@ -5,7 +5,6 @@ import com.lance5057.butchercraft.blocks.HashBowlBlock;
 import com.lance5057.butchercraft.blocks.HideBlock;
 import com.lance5057.butchercraft.blocks.JellyBlock;
 import com.lance5057.butchercraft.blocks.PotRoastBlock;
-import com.lance5057.butchercraft.blocks.SalisburySteakBlock;
 import com.lance5057.butchercraft.workstations.blocks.ButcherBlockBlock;
 import com.lance5057.butchercraft.workstations.blocks.DryingRackBlock;
 import com.lance5057.butchercraft.workstations.blocks.MeatHookBlock;
@@ -70,18 +69,14 @@ public class ButchercraftBlocks {
 	public static final RegistryObject<PotRoastBlock> POT_ROAST_FEAST = BLOCKS.register("potroast_block",
 			() -> new PotRoastBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.COLOR_BROWN),
 					ButchercraftItems.POT_ROAST, true));
-	public static final RegistryObject<SalisburySteakBlock> SALISBURY_STEAK_FEAST = BLOCKS.register("salisbury_steak_block",
-			() -> new SalisburySteakBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.COLOR_BROWN),
-					ButchercraftItems.SALISBURY_STEAK, true));
+	
 	public static final RegistryObject<BbqRibsBlock> BBQ_RIBS_FEAST = BLOCKS.register("bbq_ribs_block",
 			() -> new BbqRibsBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.COLOR_BROWN),
 					ButchercraftItems.BBQ_RIBS, true)); 
 	public static final RegistryObject<BbqRibsBlock> PULLED_PORK_FEAST = BLOCKS.register("pulled_pork_block",
 			() -> new BbqRibsBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.COLOR_BROWN),
 					ButchercraftItems.PULLED_PORK_SANDWICH, true)); 
-	public static final RegistryObject<BbqRibsBlock> MASHED_POTATO_GRAVY = BLOCKS.register("mashed_potato_gravy_block",
-			() -> new BbqRibsBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.COLOR_BROWN),
-					ButchercraftItems.MASHED_POTATO_GRAVY, true)); 
+	
 	public static final RegistryObject<BbqRibsBlock> RACK_LAMB = BLOCKS.register("rack_lamb_block",
 			() -> new BbqRibsBlock(BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.COLOR_BROWN),
 					ButchercraftItems.RACK_LAMB, true)); 
