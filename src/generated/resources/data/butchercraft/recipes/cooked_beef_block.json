@@ -2,31 +2,85 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "forge:beef/cooked"
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:beef/cooked"
+      },
+      "subtracted": {
+        "item": "butchercraft:cooked_ground_beef"
+      }
     },
     {
-      "tag": "forge:beef/cooked"
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:beef/cooked"
+      },
+      "subtracted": {
+        "item": "butchercraft:cooked_ground_beef"
+      }
     },
     {
-      "tag": "forge:beef/cooked"
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:beef/cooked"
+      },
+      "subtracted": {
+        "item": "butchercraft:cooked_ground_beef"
+      }
     },
     {
-      "tag": "forge:beef/cooked"
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:beef/cooked"
+      },
+      "subtracted": {
+        "item": "butchercraft:cooked_ground_beef"
+      }
     },
     {
-      "tag": "forge:beef/cooked"
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:beef/cooked"
+      },
+      "subtracted": {
+        "item": "butchercraft:cooked_ground_beef"
+      }
     },
     {
-      "tag": "forge:beef/cooked"
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:beef/cooked"
+      },
+      "subtracted": {
+        "item": "butchercraft:cooked_ground_beef"
+      }
     },
     {
-      "tag": "forge:beef/cooked"
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:beef/cooked"
+      },
+      "subtracted": {
+        "item": "butchercraft:cooked_ground_beef"
+      }
     },
     {
-      "tag": "forge:beef/cooked"
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:beef/cooked"
+      },
+      "subtracted": {
+        "item": "butchercraft:cooked_ground_beef"
+      }
     },
     {
-      "tag": "forge:beef/cooked"
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:beef/cooked"
+      },
+      "subtracted": {
+        "item": "butchercraft:cooked_ground_beef"
+      }
     }
   ],
   "result": {

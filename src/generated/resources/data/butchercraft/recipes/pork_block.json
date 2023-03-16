@@ -2,31 +2,85 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "forge:pork/raw"
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:pork/raw"
+      },
+      "subtracted": {
+        "item": "butchercraft:ground_pork"
+      }
     },
     {
-      "tag": "forge:pork/raw"
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:pork/raw"
+      },
+      "subtracted": {
+        "item": "butchercraft:ground_pork"
+      }
     },
     {
-      "tag": "forge:pork/raw"
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:pork/raw"
+      },
+      "subtracted": {
+        "item": "butchercraft:ground_pork"
+      }
     },
     {
-      "tag": "forge:pork/raw"
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:pork/raw"
+      },
+      "subtracted": {
+        "item": "butchercraft:ground_pork"
+      }
     },
     {
-      "tag": "forge:pork/raw"
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:pork/raw"
+      },
+      "subtracted": {
+        "item": "butchercraft:ground_pork"
+      }
     },
     {
-      "tag": "forge:pork/raw"
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:pork/raw"
+      },
+      "subtracted": {
+        "item": "butchercraft:ground_pork"
+      }
     },
     {
-      "tag": "forge:pork/raw"
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:pork/raw"
+      },
+      "subtracted": {
+        "item": "butchercraft:ground_pork"
+      }
     },
     {
-      "tag": "forge:pork/raw"
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:pork/raw"
+      },
+      "subtracted": {
+        "item": "butchercraft:ground_pork"
+      }
     },
     {
-      "tag": "forge:pork/raw"
+      "type": "forge:difference",
+      "base": {
+        "tag": "forge:pork/raw"
+      },
+      "subtracted": {
+        "item": "butchercraft:ground_pork"
+      }
     }
   ],
   "result": {

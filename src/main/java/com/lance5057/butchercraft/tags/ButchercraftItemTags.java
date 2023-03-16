@@ -52,6 +52,7 @@ public class ButchercraftItemTags {
 	public static final TagKey<Item> BEEF_RIBS = forgeTag("beef/ribs");
 	public static final TagKey<Item> CUBED_BEEF = forgeTag("beef/cubed");
 	public static final TagKey<Item> STEW_BEEF = forgeTag("beef/stew");
+	public static final TagKey<Item> OXTAIL = forgeTag("beef/oxtail");
 
 	public static final TagKey<Item> BEEF_RAW = forgeTag("beef/raw");
 	public static final TagKey<Item> SCRAP_BEEF_RAW = forgeTag("beef/scrap/raw");
