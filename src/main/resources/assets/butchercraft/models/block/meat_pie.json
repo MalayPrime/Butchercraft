@@ -1,9 +1,0 @@
-{
-  "parent": "butchercraft:block/pie",
-  "textures": {
-    "particle": "butchercraft:block/meat_pie_top",
-    "bottom": "farmersdelight:block/pie_bottom",
-    "side": "farmersdelight:block/pie_side",
-    "top": "butchercraft:block/meat_pie_top"
-  }
-}

@@ -72,6 +72,8 @@ import net.minecraftforge.common.crafting.DifferenceIngredient;
 import net.minecraftforge.registries.ForgeRegistries;
 import vectorwing.farmersdelight.common.registry.ModItems;
 import vectorwing.farmersdelight.common.tag.ForgeTags;
+import vectorwing.farmersdelight.data.builder.CookingPotRecipeBuilder;
+import vectorwing.farmersdelight.data.recipe.CookingRecipes;
 
 public class ButchercraftRecipeProvider extends RecipeProvider {
 
@@ -457,16 +459,22 @@ public class ButchercraftRecipeProvider extends RecipeProvider {
 				.unlockedBy("has_sheep_hide", has(SHEEP_HIDE.get()))
 				.save(consumer, new ResourceLocation(Butchercraft.MOD_ID, "sheep_hide_to_leather"));
 
-//		
-
-//		ShapelessRecipeBuilder.shapeless(ModItems.MINCED_BEEF.get(), 1)
-//				.requires(ButchercraftItemTags.ANY_GROUND_MEAT_RAW)
-//				.unlockedBy("has_meat", has(ButchercraftItemTags.ANY_MEAT_RAW))
-//				.save(consumer, new ResourceLocation(Butchercraft.MOD_ID, "form_patty"));
+		CookingPotRecipeBuilder.cookingPotRecipe(ButchercraftItems.LARD.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
+				.addIngredient(ButchercraftItems.FAT.get()).addIngredient(ButchercraftItems.FAT.get())
+				.build(consumer, new ResourceLocation(Butchercraft.MOD_ID, "lard"));
 
 		ShapelessRecipeBuilder.shapeless(Items.CANDLE, 6).requires(ButchercraftItems.LARD.get()).requires(Items.STRING)
 				.unlockedBy("has_lard", has(ButchercraftItems.LARD.get()))
 				.save(consumer, new ResourceLocation(Butchercraft.MOD_ID, "lard_to_candle"));
+
+		CookingPotRecipeBuilder.cookingPotRecipe(ButchercraftItems.GELATIN.get(), 4, CookingRecipes.SLOW_COOKING, 0.35F)
+				.addIngredient(ButchercraftItemTags.GELATIN_PROVIDER)
+				.addIngredient(ButchercraftItemTags.GELATIN_PROVIDER)
+				.addIngredient(ButchercraftItemTags.GELATIN_PROVIDER)
+				.addIngredient(ButchercraftItemTags.GELATIN_PROVIDER)
+				.addIngredient(ButchercraftItemTags.GELATIN_PROVIDER)
+				.addIngredient(ButchercraftItemTags.GELATIN_PROVIDER)
+				.build(consumer, new ResourceLocation(Butchercraft.MOD_ID, "gelatin"));
 
 	}
 
